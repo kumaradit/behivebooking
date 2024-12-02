@@ -36,12 +36,12 @@ const BookingCard: React.FC = () => {
               <p>{booking.name}</p>
             </div>
             <div className="card_header_image">
-            <img src="/image/header_image.png" />
+            <img src="/image/header_image.png" alt="header_img" />
             </div>
           </div>
 
           <div className="card_body_display">
-            <img src={booking.images[0] || "/image/card_body.png"} height={"202"} width={"346"} alt="card body img" loading="lazy"/> 
+            <img src={booking.images[0] || "/image/card_body.png"} height={"202"} width={"346"} alt="card_body_img" loading="lazy"/> 
           </div>
           <img
             src={"/image/workspace.png"}
@@ -59,9 +59,9 @@ const BookingCard: React.FC = () => {
                 <span>/day</span>
               </div>
               <div>
-                <img src="/image/arrow.png" alt="Arrow" />{" "}
-                <img src="/image/arrow.png" alt="Arrow" />{" "}
-                <img src="/image/arrow.png" alt="Arrow" />
+                <img src="/image/arrow.png" alt ="arrow_image" />{" "}
+                <img src="/image/arrow.png" alt ="arrow_image" />{" "}
+                <img src="/image/arrow.png" alt ="arrow_image" />
               </div>
             </div>
             <div className="bulk_button">
@@ -71,8 +71,9 @@ const BookingCard: React.FC = () => {
                 <span>/10 day</span>
               </div>
               <div>
-                <img src="/image/arrow.png" /> <img src="/image/arrow.png" />{" "}
-                <img src="/image/arrow.png" />
+                <img src="/image/arrow.png" alt ="arrow_image"/> 
+                <img src="/image/arrow.png" alt ="arrow_image"/>{" "}
+                <img src="/image/arrow.png" alt ="arrow_image" />
               </div>
             </div>
           </div>
