@@ -1,0 +1,13 @@
+
+.footer_container {
+  background: #222e34;
+  padding: 10px 20px;
+  text-align: center;
+}
+.footer_text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+}

@@ -1,0 +1,80 @@
+.meeting_title{
+font-family: Inter;
+font-size: 58px;
+font-weight: 700;
+line-height: 70.19px;
+letter-spacing: -1px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.meeting_container{
+    background-image: url('./../public/image/meetingtiles.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0 40px;
+    position: relative;
+}
+.meeting_container:after {
+    content: '';
+    background-image: url('./../public/image/coworkingtiles.png');
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    z-index: 1;
+}
+.meeting_container_inner{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.meeting_title_container{
+    width:56%;
+
+}
+.meeting_img{
+    width: 100%;
+    height: auto;
+}
+
+.starting_price{
+    color:#FFBB00 ;
+}
+/* For Mobile Devices (480px - 768px) */
+@media screen and (max-width: 768px) {
+    .meeting_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .meeting_container_inner {
+        flex-wrap: wrap;
+    }
+    .meeting_title {
+        font-size: 20px; /* Further reduce font size */
+        line-height: 1.4;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .meeting_img_container {
+        order: 1;
+    }
+
+    .meeting_title_container {
+        width: 100%;
+        margin-bottom: 20px; /* Add spacing between title and image */
+        order: 2;
+    }
+
+    .meeting_img {
+        width: 250px; /* Smaller image for mobile */
+        height: 250px;
+    }
+}

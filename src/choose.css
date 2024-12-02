@@ -1,0 +1,63 @@
+.choose_headtitle {
+  width: 300px;
+  height: 45px;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.choose_container {
+  width: 30%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+}
+.choose_display {
+  display: flex;
+}
+.choose_img {
+  height: 20px;
+  width: 20px;
+}
+.choose_container h4 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+.choose_main {
+  padding: 30px 0 30px;
+}
+/* For Mobile Devices (480px - 768px) */
+@media screen and (max-width: 768px) {
+  .choose_container h4 {
+      width: 100%;
+      margin: 0;
+      font-size: 17px;
+      margin-top: 10px;
+  }
+  .choose_container {
+    width: 49%;
+    flex-wrap: wrap;
+    gap: 0;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 8px -4px rgb(0 0 0 / 46%);
+    padding: 20px 2px 20px;
+    height: auto;
+  }
+
+  .choose_display {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .choose_headtitle {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,203 @@
+.card_container {
+  min-height: 384px;
+  border-radius: 8px;
+  border: 1.08px solid #eee7e7cc;
+  box-shadow: 0px 1.08px 8.63px 0px #0000000f;
+  background: #ffffff;
+  padding: 12px;
+  box-sizing: border-box;
+  -ms-flex: 0 0 33.333333%;
+    flex: 0 0 32.333333%;
+    max-width: 32.333333%;
+}
+
+.card_display {
+  display: flex;
+  justify-content: space-between;
+}
+.card_body_display {
+  width: 100%;
+  height: 202px;
+  gap: 0px;
+  border-radius: 6px 0px 0px 0px;
+  opacity: 0px;
+}
+.card_footer_display {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  margin-top: -60px;
+}
+.card_header_title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.card_header_image {
+  width: 52px;
+  height: 52px;
+  gap: 0px;
+  opacity: 0px;
+  border: 0.47px solid #eee7e7;
+  border-radius: 8px;
+}
+.day_button {
+  width: 167px;
+  height: 66px;
+  border-radius: 6px;
+  border: 0.5px 0px 0px 0px;
+  opacity: 0px;
+  background: #f9f9f9;
+  border: 0.5px solid #eee7e7;
+  padding: 12px;
+  margin-top: 16px;
+  align-items: center;
+  display: flex;
+  gap: 35px;
+}
+.bulk_button {
+  width: 167px;
+  height: 66px;
+  border-radius: 6px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffcf4b;
+  border: 1px solid #ffc422;
+  padding: 12px;
+  margin-top: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.day_text {
+  width: 62px;
+  height: 17px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.price_text {
+  width: 85px;
+  height: 24px;
+  gap: 0px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.price_text span {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.booking_card_title {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #263238;
+}
+
+.worspace_img {
+  position: relative;
+  top: -190px;
+  left: 8px;
+}
+
+.card_outer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.discount_bar {
+  position: relative;
+  top: -20px;
+  left: 235px;
+  background-color: black;
+  color: white;
+  width: max-content;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 10px;
+}
+
+.card_body_display img{
+  border-radius: 8px;
+}
+
+.card_header_title p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20ch;
+}
+
+@media screen and (max-width: 991px) {
+  .card_outer {
+    gap: 15px;
+    justify-content: space-around;
+}
+  .card_container {
+    height: auto;
+    flex: 0 0 48.333333%;
+    max-width: 48.333333%;
+  }
+  .download_container:after {
+    top: 40px;
+  }
+  .download_text {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+   .discount_bar{
+    top: -30px;
+   }
+  .booking_card_title {
+    font-size: 28px;
+  }
+  .card_outer {
+    display: block;
+  }
+  .card_container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .card_body_display img {
+      width: 100%;
+  }
+  .card_body_display {
+    width: 100%;
+    height: auto;
+  }
+  .card_header_title p {
+      margin-top: 10px;
+  }
+  .card_display {
+    margin-bottom: 20px;
+  }
+  .card_footer_display {
+    gap: 10px;
+  }
+}

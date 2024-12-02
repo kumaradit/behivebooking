@@ -1,0 +1,20 @@
+.header_display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  opacity: 0px;
+}
+
+.logo {
+  padding: 25px 0 25px 0;
+}
+
+.call_info {
+  border: 1px solid #f2b304;
+  box-shadow: 4px 4px 14px 0px #0000000f;
+  position: relative;
+  right: 0;
+  padding: 6px;
+  scale: 0.8;
+}
