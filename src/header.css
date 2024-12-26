@@ -9,6 +9,10 @@
 .logo {
   padding: 25px 0 25px 0;
 }
+.logo_image{
+  width:124px;
+  height:40px;
+}
 
 .call_info {
   border: 1px solid #f2b304;
