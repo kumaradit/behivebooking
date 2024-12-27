@@ -22,9 +22,7 @@ const Choose: React.FC = () => {
             <img className="choose_img" src="/image/cafe.png"></img>
             <h4>Cafe & Tea bar</h4>
           </div>
-        </div>
 
-        <div className="choose_display">
           <div className="choose_container">
             <img className="choose_img" src="/image/affordable.png"></img>
             <h4>Affodables</h4>
